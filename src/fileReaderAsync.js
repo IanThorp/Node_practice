@@ -1,5 +1,5 @@
 const fs = require('fs'); 
-let fileName = process.argv[2]
+let fileName = process.argv[2];
 
 const numLinesFile = (filePath, cb) => {
 	let file = fs.readFile(filePath);
@@ -7,6 +7,6 @@ const numLinesFile = (filePath, cb) => {
 	cb();
 }
 
-numLinesFile(fileName, function(){
+numLinesFile(fileName, function(err, numLines){
 	console.log(numLines);
 })

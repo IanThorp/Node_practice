@@ -8,4 +8,4 @@ var numLinesInFile = function numLinesInFile(filePath) {
 	return numLines;
 };
 
-console.log(numLinesInFile(process.argv.index(2)));
+console.log(numLinesInFile(process.argv[2]));

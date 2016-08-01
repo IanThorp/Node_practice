@@ -6,4 +6,4 @@ const numLinesInFile = (filePath) => {
 	return numLines;
 }
 
-console.log(numLinesInFile(process.argv[2])
+console.log(numLinesInFile(process.argv[2]))
